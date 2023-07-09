@@ -1,0 +1,80 @@
+.myfont {
+        /* Set the background color */
+    color: red;
+}
+.mybutton{
+  margin: 2%;
+}
+.mb{
+  margin-left: 1%;
+}
+.pass{
+    width: 60%;
+}
+.login {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+  }
+  th, td {
+    border : 1px solid black;
+  }
+  
+  .main {
+    background-color: aliceblue;
+    color:black;
+    padding: 20px 100px;
+    display: inline-block;
+  }
+  .txt{
+    height: 40%;
+  }
+  .custom-select {
+    appearance: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #333;
+    background-color: #fff;
+    margin-left: 1;
+  }
+  
+  .custom-select:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    font-size: x-large;
+    color: crimson;
+  }
+  
+  li:before {
+    content: "•";
+    color: #ff7f50; /* Adjust the color as per your preference */
+    font-weight: bold;
+    display: inline-block;
+    width: 3em;
+    margin-left: -1em;
+    
+  }
+  .lbl{padding-left: 2%;}
+  

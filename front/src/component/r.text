@@ -1,0 +1,39 @@
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './mystyles.css';
+import { useForm } from "react-hook-form";
+import { useDispatch,useSelector } from 'react-redux';
+import { signIn } from '../actions/signInActions';
+import './mystyles.css';
+import { useNavigate } from 'react-router-dom';
+
+
+
+const Login = () => {
+  const nav = useNavigate()
+  const isHwo = useSelector(state => state.signin.userInfos)
+  if(isHwo==="STUDENT"){nav('/Student')}
+
+  const dispatch = useDispatch()
+  const { register, handleSubmit } = useForm();
+  const control = (data) => {
+    dispatch(signIn(data))
+  }
+
+  return (
+    <form className='login-box' onSubmit={handleSubmit(control)}>
+      <div class="form-outline mb-4">
+        <input type="email" placeholder='E-mail' class="form-control" {...register("email")} />
+        <br />
+        <input type="password" placeholder='password' class="form-control" {...register("password")} />
+        <br />
+        <button type="submit" class="btn btn-primary btn-block mb-4 mybutton">Sign in</button>
+        <button type="button" class="btn  btn-outline-danger mb-4 mybutton">Sign Up</button>
+      </div>
+
+    </form>
+  )
+}
+
+export default Login 
+{ allTest.map((test) => (<div className='task4' id={test._id} key={test._id}></div>))}
